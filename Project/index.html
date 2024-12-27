@@ -4,91 +4,170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google-Themed Developer Hub</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div>
-      <header>
-        <nav>
-          <!-- Step 1.1: Create a div for the logo container -->
-          <!-- Step 1.2: Inside the div, add an image element for the logo and a paragraph for the brand name -->
-          <!-- Step 1.3: Create an unordered list for navigation links -->
-          <!-- Step 1.4: Inside the unordered list, include the navigation items: Home, Articles, Resources, Contact -->
-        </nav>
-        <section>
-          <!-- Step 2.1: Create a div for the container of the introductory part -->
-          <!-- Step 2.2: Inside the div, create a heading for the main title of the website, "Developer Hub" -->
-          <!-- Step 2.3: Inside the div, create a paragraph describing the website. Example: "Your journey to mastering web development starts here..." -->
-        </section>
-      </header>
+    <header>
+      <div class="navbar">
+        <div class="navbar--container">
+          <div class="logo-container">
+            <div class="logo-img-container">
+              <img src="assets/images/GDG-LOGO.png" alt="GDG Logo" />
+            </div>
+            <p>Google Developer Group</p>
+          </div>
 
-      <main>
-        <div>
-          <!-- Step 3.1: Create a div to contain the main blog posts -->
+          <nav class="nav-links-container">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Resources</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <section class="header-banner-container">
+        <h1>Developer Hub</h1>
+        <p>
+          Your journey to mastering web development starts here. Discover
+          insights, best practices, and resources from experts in the field.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="main-posts">
           <article>
-            <!-- Step 3.2: Create an article element to group individual blog posts -->
-            <div>
-              <!-- Step 3.3: Create a div for a single blog post -->
-              <div>
-                <!-- Step 3.4: Inside the blog post div, create a div for the "post-image" -->
-                <!-- Add an image for the blog post: src="assets/images/post1.jpg", alt="HTML & CSS Code Snippet" -->
-              </div>
-              <div>
-                <!-- Step 3.5: Inside the blog post div, create a div for the "post-content" -->
-                <!-- Create an h2 for the blog post title -->
-                <!-- Add a paragraph for the post metadata (e.g., "Posted on November 15, 2023 by Google Dev Team") -->
-                <!-- Add a paragraph for the post summary (e.g., "Creating an effective website starts with solid HTML...") -->
-              </div>
+            <img src="assets/images/post1.jpg" alt="HTML & CSS Code Snippet" />
+            <div class="post-content">
+              <h2>Structuring the Web: Best Practices for HTML and CSS</h2>
+              <p class="post-meta">
+                Posted on November 15, 2023 by Google Dev Team
+              </p>
+              <p>
+                Creating an effective website starts with solid HTML and CSS
+                foundations. Learn the essentials of document structure,
+                semantic tags, and responsive design to make your web projects
+                stand out.
+              </p>
             </div>
+          </article>
 
-            <!-- Step 3.6: Using the instructions above, create two more blog posts -->
-            <div>
-              <!-- Include the following for this post: src="assets/images/post2.png", title="Building Dynamic UI with JavaScript", metadata="Posted on November 14, 2023 by Google Dev Team", summary="From interactive forms to dynamic content, JavaScript brings your website to life..." -->
-            </div>
-            <div>
-              <!-- Include the following for this post: src="assets/images/post3.jpeg", title="Unlocking the Magic of CSS Flexbox", metadata="Posted on November 13, 2023 by Google Dev Team", summary="Learn how to create responsive and dynamic layouts with CSS Flexbox..." -->
+          <article>
+            <img
+              src="assets/images/post2.png"
+              alt="Building Dynamic UI with JavaScript"
+            />
+            <div class="post-content">
+              <h2>Building Dynamic UI with JavaScript: A Beginner's Guide</h2>
+              <p class="post-meta">
+                Posted on November 14, 2023 by Google Dev Team
+              </p>
+              <p>
+                From interactive forms to dynamic content, JavaScript brings
+                your website to life. Explore techniques to enhance user
+                experience with dynamic web elements that engage and inform.
+              </p>
             </div>
           </article>
         </div>
 
-        <aside>
-          <!-- Step 4.1: Create an aside section for the sidebar -->
-          <div>
-            <!-- Step 4.2: Create a div for "popular-posts-side" -->
-            <!-- Step 4.3: Add a subheading for the popular posts, e.g., "Top Picks" -->
-            <!-- Step 4.4: Inside the "popular-posts-side", create multiple divs for popular posts -->
-            <div>
-              <!-- For this post, include: src="assets/images/aside1.jpg", title="Getting Started with JavaScript", description="Explore the essentials of JavaScript for beginners..." -->
-            </div>
-            <div>
-              <!-- For this post, include: src="assets/images/aside2.png", title="CSS Grid Mastery", description="Learn how to create flexible layouts with CSS Grid..." -->
-            </div>
-            <div>
-              <!-- For this post, include: src="assets/images/aside3.jpg", title="Responsive Design Essentials", description="Tips and tricks to build responsive websites in 2024..." -->
-            </div>
+        <aside class="sidebar">
+          <h3>Top Picks</h3>
+          <div class="popular-post">
+            <img
+              src="assets/images/aside1.jpg"
+              alt="Getting Started with JavaScript"
+            />
+            <a href="#"
+              >Getting Started with JavaScript: What You Need to Know...</a
+            >
           </div>
-
-          <div>
-            <!-- Step 4.5: Create a div for "social-side" -->
-            <!-- Add a subheading, e.g., "Follow Us" -->
-            <!-- Add anchor tags with social media images for Facebook, Twitter, Instagram, and LinkedIn -->
+          <div class="popular-post">
+            <img src="assets/images/aside2.png" alt="CSS Grid Mastery" />
+            <a href="#"
+              >Mastering Layouts with CSS Grid: Step-by-Step Guide...</a
+            >
+          </div>
+          <div class="popular-post">
+            <img
+              src="assets/images/aside3.jpg"
+              alt="Responsive Design Essentials"
+            />
+            <a href="#">Responsive Web Design Essentials for 2024...</a>
+          </div>
+          <div class="popular-post">
+            <img
+              src="assets/images/aside4.png"
+              alt="Making Website Accessible"
+            />
+            <a href="#"
+              >Making Websites Accessible: A Beginner's Checklist...</a
+            >
           </div>
         </aside>
-      </main>
+      </div>
+    </main>
 
-      <footer>
-        <!-- Step 5.1: Create a div for the "footerBoxes" -->
-        <div>
-          <!-- Step 5.2: Inside the div, create individual "footerBox" divs for Privacy Policy, Terms of Service, and Support -->
-          <!-- For Privacy Policy: Add an h3, an hr, and a paragraph explaining the policy -->
-          <!-- For Terms of Service: Add an h3, an hr, and a paragraph explaining the terms -->
-          <!-- For Support: Add an h3, an hr, and a paragraph explaining how to contact support -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-box">
+          <h4>Privacy Policy</h4>
+          <p>
+            We are committed to protecting your privacy and ensuring compliance
+            with data regulations. Learn more about our privacy policies.
+          </p>
         </div>
-        <hr />
-        <!-- Step 5.3: Add a horizontal line as a separator -->
-        <p>2023 Developer Hub | All Rights Reserved</p>
-        <!-- Step 5.4: Add a paragraph for the copyright notice -->
-      </footer>
-    </div>
+
+        <div class="footer-box">
+          <h4>Terms of Services</h4>
+          <p>
+            Our platform offers resources for developers to learn, share, and
+            grow. By using this website, you agree to our terms and guidelines.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Support</h4>
+          <p>
+            If you have questions or in need of assistance, our support team is
+            available to help. Reach out through our social links.
+          </p>
+        </div>
+      </div>
+      <br />
+
+      <hr />
+      <div class="socials">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="assets/images/facebook.png" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="assets/images/instagram.png" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank"
+              ><img src="assets/images/twitter.png" alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/home" target="_blank"
+              ><img src="assets/images/linkedin.png" alt="LinkedIn"
+            /></a>
+          </li>
+        </ul>
+        <br />
+        <p>&copy; 2023 Developer Hub | All Rights Reserved</p>
+        <br />
+      </div>
+    </footer>
   </body>
 </html>
